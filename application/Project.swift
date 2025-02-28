@@ -12,8 +12,8 @@ let project: Project = Project(
     organizationName: organization,
     targets: [
         Project.makeAppTargets(
-            name: Framework.app.rawValue,
-            dependencies: Framework.app.dependcies,
+            name: Framework.appStore.rawValue,
+            dependencies: Framework.appStore.dependcies,
             baseBundleID: baseBundleID
         ),
     ].flatMap { $0 }

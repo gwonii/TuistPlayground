@@ -29,7 +29,9 @@ extension Project {
         public var dependcies: [TargetDependency] {
             switch self {
                 case .commonPresenter:
-                    return []
+                    return [
+                        .external(name: "ComposableArchitecture")
+                    ]
                 case .commonUI:
                     return []
             }
