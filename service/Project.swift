@@ -8,7 +8,6 @@ private let organization: String = ""
 let project = Project(
     name: name,
     organizationName: organization,
-    packages: Project.servicePackages + Project.testPackages,
     targets: [
         Project.CommonFramework.allCases
             .flatMap { framework in
